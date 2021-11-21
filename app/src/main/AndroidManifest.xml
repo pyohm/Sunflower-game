@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SunflowerGame">
         <activity
-            android:name=".if_good"
+            android:name=".end"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
