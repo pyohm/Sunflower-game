@@ -26,7 +26,7 @@ public class end extends AppCompatActivity {
         Intent intent = getIntent();
         int result_day = intent.getIntExtra("day",0);
 
-        result.setText("게임을 종료합니다."+"\n"+"총 생존 day는 "+result_day+"입니다.");
+        result.setText("게임을 종료합니다."+"\n"+"생존일수는 "+result_day+"일입니다.");
 
         btn_out.setOnClickListener(new View.OnClickListener() {
             @Override
