@@ -115,9 +115,9 @@ public class MainActivity extends AppCompatActivity {
                 }
                 day += 1;
 
-                text_deg.setText("기온: "+Integer.toString(deg)+"도 입니다."+"(적정 온도: 18도 ~ 25도)");
+                text_deg.setText("기온: "+Integer.toString(deg)+"도 입니다."+"\n"+"(적정 온도: 18도 ~ 25도)");
                 text_weather.setText("날씨: "+"맑음 개수"+Integer.toString(sunny)+","+"흐림 개수"+Integer.toString(cloudy)+"\n"+
-                        "day: "+Integer.toString(day)+"일차 입니다."+"\n"+"생명력: "+Integer.toString(heart));
+                        "(흐림이 4일 지속되면 게임 종료)"+"\n"+"day: "+Integer.toString(day)+"일차 입니다."+"\n"+"생명력: "+Integer.toString(heart));
 
                 if(deg<18 || deg > 25) {//적정온도 아닐때
                     btn_move_if_good.setText("적정온도가 아닙니다. (계산문제 진행)");
@@ -153,8 +153,8 @@ public class MainActivity extends AppCompatActivity {
                     editText1.setVisibility(View.VISIBLE);
                     btn_result.setVisibility(View.VISIBLE);
 
-                    int left = getRandom(8, 2);
-                    int right = getRandom(8, 2);
+                    int left = getRandom(20, 2);
+                    int right = getRandom(20, 2);
                     textView1.setText(left + "*" + right + "=?");
                     nResult = left * right;
                 }
@@ -186,7 +186,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(),"생명력이 모두 소진되어 게임이 종료되었습니다", Toast.LENGTH_LONG).show();
                     }
                 }
-                text_deg.setText("기온: "+Integer.toString(deg)+"도 입니다."+"(적정 온도: 18도 ~ 25도)");
+                text_deg.setText("기온: "+Integer.toString(deg)+"도 입니다."+"\n"+"(적정 온도: 18도 ~ 25도)");
                 text_weather.setText("날씨: "+"맑음 개수"+Integer.toString(sunny)+","+"흐림 개수"+Integer.toString(cloudy)+"\n"+
                         "day: "+Integer.toString(day)+"일차 입니다."+"\n"+"생명력: "+Integer.toString(heart));
                 btn_test.setEnabled(true);

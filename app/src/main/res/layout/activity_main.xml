@@ -12,19 +12,22 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:textSize="20dp"
         />
     <TextView
         android:id="@+id/text_weather"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:textSize="20dp"/>
 
     <Button
         android:id="@+id/btn_test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="과연 다음날 기온과 날씨는??"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        />
 
 
     <Button
@@ -34,6 +37,8 @@
         android:text="계속하기"
         android:layout_gravity="center"
         android:enabled="false"
+
+
         />
 
     <ImageView
